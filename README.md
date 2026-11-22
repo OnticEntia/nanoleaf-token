@@ -4,6 +4,8 @@ A small Home Assistant helper that adds a Nanoleaf device to the **built-in Nano
 
 It adds nothing of its own. Once the device is handed over, it is a normal Nanoleaf device in Home Assistant, run entirely by the built-in integration.
 
+![The setup form: the device's IP address and an existing auth token](docs/images/setup-form.webp)
+
 ## Why it exists
 
 The built-in Nanoleaf integration gets its token by pairing: you hold the device's power button and Home Assistant asks the device for a new token. That works well when Home Assistant can discover the device, or when you can add it by address and reach the button in time.
