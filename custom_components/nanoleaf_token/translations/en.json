@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a Nanoleaf with an existing token",
+        "description": "For Nanoleaf devices Home Assistant doesn't discover. Enter the device's IP address and an Open API token you already have; it's handed to the built-in Nanoleaf integration, which adds the device as usual.",
+        "data": { "host": "IP address", "token": "Auth token" }
+      }
+    },
+    "error": {
+      "invalid_host": "Enter an IPv4 address, like 192.168.1.50",
+      "not_nanoleaf": "Something answered at that address, but not like a Nanoleaf",
+      "invalid_token_format": "A Nanoleaf token is only letters and digits; check for stray characters",
+      "handoff_failed": "The token is valid, but the Nanoleaf integration didn't add the device: {reason}. Nothing was saved. If this keeps happening, a Home Assistant update may have changed how it takes over tokens; see the log.",
+      "handoff_in_progress": "The token is valid, but Home Assistant already has a setup waiting for this device. Finish or dismiss it under Settings > Devices & services, then try again. Nothing was saved.",
+      "invalid_token": "The device rejected that token",
+      "cannot_connect": "Couldn't reach a Nanoleaf at that address (port 16021)"
+    },
+    "abort": {
+      "handed_off": "Done: {name} was passed to the Nanoleaf integration. Find it under Settings > Devices & services > Nanoleaf.",
+      "already_configured": "This Nanoleaf is already set up in the Nanoleaf integration"
+    }
+  }
+}
